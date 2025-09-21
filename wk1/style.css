@@ -1,0 +1,130 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('assets/binary-3725324_1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: #000;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 40px;
+    display: block;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right ul li {
+    display: inline;
+}
+
+.nav-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-right ul li a:hover {
+    color: #ffeb3b;
+}
+
+footer {
+    background: rgba(0,0,0,1);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* START SUPPORT BOX */
+.support-box {
+    background: #1976d2;
+    color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 0; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-box h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.support-box p {
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+}
+
+.support-box h2, .support-box p {
+    color: #ffff;
+}
+
+.submit-btn-mock {
+    background: #ffe607;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;    
+    display: inline-block;
+}
+
+.submit-btn-mock p {
+    color: #04325f;
+}
+/* END SUPPORT BOX */
