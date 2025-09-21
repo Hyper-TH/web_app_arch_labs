@@ -1,3 +1,14 @@
+@media (max-width: 1100px) {
+    .ticket-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .ticket-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -128,3 +139,100 @@ footer {
     color: #04325f;
 }
 /* END SUPPORT BOX */
+
+
+#tickets {
+    background: #000;
+    padding: 2rem 1rem;
+    border-radius: 0;
+    max-width: 1100px;      
+    margin: 2rem auto;      
+}
+
+#tickets h2,
+.color-white {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* START TICKETS */
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ticket-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem 1rem;         
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;          
+    height: auto;
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.ticket-id {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.ticket-status {
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 0.2em 0.7em;
+    border-radius: 12px;
+    align-self: flex-start;
+}
+
+.ticket-status.open {
+    background: #ffeaea;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+}
+
+.ticket-status.resolved {
+    background: #eaffea;
+    color: #388e3c;
+    border: 1px solid #388e3c;
+}
+
+.ticket-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to the bottom */
+    flex: 1;
+}
+
+.ticket-body h3,
+.ticket-body .ticket-user {
+    text-align: left;
+    margin: 0;
+}
+
+.ticket-body h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.4rem;
+}
+
+.ticket-user {
+    font-size: 0.98rem;
+    color: #888; 
+    margin-bottom: 0;
+}
+/* END TICKETS */
